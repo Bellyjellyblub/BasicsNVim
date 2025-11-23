@@ -22,7 +22,7 @@ if [ -d $CONFIG_DIR ]; then
 			git clone https://github.com/MilakyS/BasicsNVim.git "$CONFIG_DIR"
 
 			echo "Installing plugins..."
-			nvim --headless +Lazy! +qa
+			nvim --headless +Lazy! sync +qa >/dev/null 2>&1
 
 			echo "BasicsNVim installed successfully!"
 			echo "Thanks for installing my config :>"
@@ -40,7 +40,7 @@ if [ -d $CONFIG_DIR ]; then
 			git clone https://github.com/MilakyS/BasicsNVim.git "$CONFIG_DIR"
 
 			echo "Installing plugins..."
-			nvim --headless +Lazy! +qa
+			nvim --headless +Lazy! +qa >/dev/null 2>&1
 
 			echo "BasicsNVim installed successfully!"
 			echo "Thanks for installing my config :>"
