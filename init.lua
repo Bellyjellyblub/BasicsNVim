@@ -13,7 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugs")
 require("core.keymaps")
-require("cmp_init")  -- автокомплит
-require("lps_init")  -- LSP
+require("configs.cmp_init")  -- автокомплит
+require("configs.lps_init")  -- LSP
 
 
