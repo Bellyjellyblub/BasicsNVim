@@ -12,7 +12,7 @@ CONFIG_DIR="$HOME/.config/nvim"
 BACKUP_DIR="$HOME/.config/nvim_backups"
 if [ -d $CONFIG_DIR ]; then
 	echo "NVim config directory founded"
-	read -p "Do you want [B]ackup your files, [D]elete or [C]ancel : " answer
+	read -p "Do you want [B]ackup your files, [D]elete or [C]ancel : " answer < /dev/tty
 	case "$answer" in
 		[Bb]*)
 			mkdir -p "$BACKUP_DIR"
