@@ -14,3 +14,7 @@ map("n", "<C-w>", "/", { noremap = true, silent = false })
 
 --NeoTree
 map('n', '<leader>t', ':Neotree toggle<CR>', {silent = true})
+
+--Telescope
+map('n', '<leader>ff', '<cmd>Telescope find_files<CR>')
+map('n', '<leader>fg', '<cmd>Telescope grep_string<CR>')

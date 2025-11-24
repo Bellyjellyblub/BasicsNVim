@@ -31,6 +31,29 @@ return {
   {"hrsh7th/cmp-nvim-lsp"},  
   {"L3MON4D3/LuaSnip"},
   {"saadparwaiz1/cmp_luasnip"},
+  {"nvim-tree/nvim-web-devicons"},
+  {"lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {
+    	indent = { char = "│" },
+    	scope = { enabled = false }
+    }
+  },
+  {
+  "stevearc/conform.nvim",
+  config = function()
+    require('conform').setup({
+      formatters_by_ft = {
+        python = { "isort", "black" },
+      },
+      format_on_save = {
+        timeout_ms = 500,
+        lsp_fallback = true,
+      }
+    })
+    
+  end
+  },
   {"williamboman/mason.nvim",
   opts = {
 	  ensure_installed = {
@@ -38,5 +61,31 @@ return {
 	  },
   },
   },
+  {
+	"nvim-lualine/lualine.nvim"
+  },
+  {
+	  "catppuccin/nvim"
+  },
+  {
+  	  "folke/noice.nvim",
+          dependencies = { "MunifTanjim/nui.nvim" },
+          config = function()
+             require("noice").setup()
+          end
+  },
+  {
+  	 "nvim-telescope/telescope.nvim",
+  	 dependencies = { "nvim-telescope/telescope-ui-select.nvim" },
+  	 config = function()
+    	 	require("telescope").setup({
+      	 		extensions = {
+         			["ui-select"] = { require("telescope.themes").get_dropdown{} }
+      			}
+    		})
+    		require("telescope").load_extension("ui-select")
+  	end
+},
+
 }
 

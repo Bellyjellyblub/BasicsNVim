@@ -15,5 +15,4 @@ require("lazy").setup("plugs")
 require("core.keymaps")
 require("configs.cmp_init")  -- автокомплит
 require("configs.lps_init")  -- LSP
-
-
+require("core.ui")
